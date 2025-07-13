@@ -1,0 +1,242 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom right, #2F726F, #1A4D7A);
+  color: #FFD700;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('The Divine.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav {
+  background-color: #1A4D7A;
+  padding: 1rem 2rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid #FFD700;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FFD700;
+  font-family: 'Trebuchet MS', cursive;
+}
+
+header {
+  background-color: #2F726F;
+  padding: 1.2rem 1rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #FFD700;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #FFD700;
+  text-shadow: 1px 1px 4px #312450;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
+.highlight {
+  color: #FFCB05;
+}
+
+
+main {
+  flex-grow: 1;
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 650px;
+  margin: 2rem auto;
+  background-color: rgba(255, 255, 255, 0.88);
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  color: #1A4D7A;
+}
+
+main p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #2F4858;
+}
+
+button {
+  padding: 0.75rem 1.6rem;
+  font-size: 1.1rem;
+  background: linear-gradient(45deg, #5E3B8C, #1A4D7A);
+  color: #fff;
+  border: 2px solid #FFD700;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #3E4AAA, #50AEEE);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #FFD700;
+}
+
+#shlokCard {
+  background-color: #ffffff;
+  border-left: 6px solid #FFD700;
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-top: 2.5rem;
+  text-align: left;
+  display: none;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+
+#shlokCard h2 {
+  color: #1A4D7A;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#shlokCard p {
+  margin-bottom: 1rem;
+  color: #374151;
+  font-size: 1rem;
+}
+
+#shlokText {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+#chapterInfo {
+  text-align: right;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+footer {
+  background-color: #1A4D7A;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #FFD700;
+  border-top: 1px solid #FFD700;
+}
+
+footer a {
+  color: #FFCB05;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.flute-img {
+  width: 80px;
+  margin-top: 0.5rem;
+  filter: drop-shadow(0 0 5px #FFD700);
+  transition: transform 0.3s ease-in-out;
+}
+
+.flute-img:hover {
+  transform: rotate(-5deg) scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .flute-img {
+    width: 60px;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+    max-width: 95%;
+    margin: 1.5rem auto;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #shlokCard {
+    padding: 1.2rem;
+  }
+
+  #shlokCard h2 {
+    font-size: 1.1rem;
+  }
+
+  #shlokCard p {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  footer a {
+    display: block;
+    margin: 0.2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 0.6rem 1.2rem;
+  }
+
+  .flute-img {
+    width: 50px;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  #shlokText {
+    font-size: 1rem;
+  }
+}
